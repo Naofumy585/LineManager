@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35325.158
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datos_LineM", "Datos_LineM", "{26E79190-2E46-426A-BC98-49BBE6EED75A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vista_LineM", "Vista_LineM", "{F2BAB5C9-4095-4B5E-8FDE-6962358892CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logica_LineM", "Logica_LineM", "{1404CC41-8206-461C-947B-560B7A5FA660}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Line_Manager_Conexion", "Line_Manager_Conexion\Line_Manager_Conexion.csproj", "{58F78478-1F92-47C7-9AC5-9A18CE93FA98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Line_Manager_Vista", "Line_Manager_Vista\Line_Manager_Vista.csproj", "{F15289EF-7538-4146-B019-A6E609427E04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Line_Manager_Logica", "Line_Manager_Logica\Line_Manager_Logica.csproj", "{23248BDB-0AD1-4B46-B2E2-FF0D03B0043F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recursos", "Recursos", "{1FCC1A88-2105-4ECD-9902-2C177D1EA707}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\ajustes.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\ajustes.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\campana.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\campana.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\casa.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\casa.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\cerrar-sesion.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\cerrar-sesion.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\email.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\email.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\Foto perfil.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\Foto perfil.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\furgoneta.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\furgoneta.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\lupa.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\lupa.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\operadora.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\operadora.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\perfiñ.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\perfiñ.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\stonks.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\stonks.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\Suv.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\Suv.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\taxi.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\taxi.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\taxi_p.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\taxi_p.png
+		..\..\..\..\..\DESCARGAS\LineManagerDIseno\urvan.png = ..\..\..\..\..\DESCARGAS\LineManagerDIseno\urvan.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58F78478-1F92-47C7-9AC5-9A18CE93FA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F78478-1F92-47C7-9AC5-9A18CE93FA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F78478-1F92-47C7-9AC5-9A18CE93FA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F78478-1F92-47C7-9AC5-9A18CE93FA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15289EF-7538-4146-B019-A6E609427E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15289EF-7538-4146-B019-A6E609427E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15289EF-7538-4146-B019-A6E609427E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15289EF-7538-4146-B019-A6E609427E04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23248BDB-0AD1-4B46-B2E2-FF0D03B0043F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23248BDB-0AD1-4B46-B2E2-FF0D03B0043F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23248BDB-0AD1-4B46-B2E2-FF0D03B0043F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23248BDB-0AD1-4B46-B2E2-FF0D03B0043F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58F78478-1F92-47C7-9AC5-9A18CE93FA98} = {26E79190-2E46-426A-BC98-49BBE6EED75A}
+		{F15289EF-7538-4146-B019-A6E609427E04} = {F2BAB5C9-4095-4B5E-8FDE-6962358892CC}
+		{23248BDB-0AD1-4B46-B2E2-FF0D03B0043F} = {1404CC41-8206-461C-947B-560B7A5FA660}
+		{1FCC1A88-2105-4ECD-9902-2C177D1EA707} = {F2BAB5C9-4095-4B5E-8FDE-6962358892CC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED031E16-371B-4A1E-89E2-54027646F35F}
+	EndGlobalSection
+EndGlobal
