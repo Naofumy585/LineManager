@@ -21,28 +21,28 @@
 
             <!-- Íconos verticales (puedes usar imágenes o FontAwesome) -->
             <Button Margin="10" Height="40" Background="Transparent">
-                <Image Source="casa.png" Stretch="Uniform" OpacityMask="{x:Null}"/>
+                <Image Source="./Recursos/casa.png" Stretch="Uniform" OpacityMask="{x:Null}"/>
             </Button>
             <Button Margin="10" Height="40" Background="Transparent" >
-                <Image Source="taxi.png" Stretch="Uniform"/>
+                <Image Source="./Recursos/taxi.png" Stretch="Uniform"/>
             </Button>
             <Button Margin="10" Height="40" Background="Transparent">
-                <Image Source="operadora.png" Stretch="Uniform"/>
+                <Image Source="./Recursos/operadora.png" Stretch="Uniform"/>
             </Button>
             <Button Margin="10" Height="40" Background="Transparent">
-                <Image Source="stonks.png" Stretch="Uniform"/>
+                <Image Source="./Recursos/stonks.png" Stretch="Uniform"/>
             </Button>
             <Button Margin="10" Height="40" Background="Transparent">
-                <Image Source="ajustes.png" Stretch="Uniform"/>
+                <Image Source="./Recursos/ajustes.png" Stretch="Uniform"/>
             </Button>
             <Button Margin="10" Height="40" Background="{x:Null}">
-                <Image Source="cerrar-sesion.png" Stretch="Uniform"/>
+                <Image Source="./Recursos/cerrar-sesion.png" Stretch="Uniform"/>
             </Button>
             <!-- Agrega más íconos aquí -->
         </StackPanel>
 
         <!-- Contenido principal -->
-        <Grid Grid.Column="1" Margin="20">
+        <Grid x:Name="ContenidoPrincipal" Grid.Column="1" Margin="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <!-- Barra superior -->
@@ -58,23 +58,25 @@
                 <Ellipse Width="30" Height="30" Fill="Gray" Margin="5" DockPanel.Dock="Right"/>
 
                 <!-- Bandera -->
-                <Image Source="mexico.png" Height="20" Margin="5" DockPanel.Dock="Right"/>
+                <Image Source="./Recursos/mexico.png" Height="20" Margin="5" DockPanel.Dock="Right"/>
                 <!-- Lupa como botón -->
                 <Button Width="30" Height="30" Margin="5" DockPanel.Dock="Right" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                    <Image Source="lupa.png" Stretch="Uniform" ScrollViewer.HorizontalScrollBarVisibility="Auto" RenderTransformOrigin="0.429,0.45"/>
+                    <Image Source="./Recursos/lupa.png" Stretch="Uniform" ScrollViewer.HorizontalScrollBarVisibility="Auto" RenderTransformOrigin="0.429,0.45"/>
                 </Button>
 
                 <!-- Texto como simulación de barra de búsqueda -->
                 <TextBox Text="Buscar..." Foreground="LightGray" FontSize="14" VerticalAlignment="Center" Margin="10" DockPanel.Dock="Right" Width="191"/>
 
                 <!-- Notificación -->
-                <Image Source="campana.png" Height="20" Margin="5" DockPanel.Dock="Right"/>
+                <Image Source="./Recursos/campana.png" Height="20" Margin="5" DockPanel.Dock="Right"/>
 
                 <!-- Email -->
-                <Image Source="email.png" Height="20" Margin="5" DockPanel.Dock="Right"/>
+                <Image Source="./Recursos/email.png" Height="20" Margin="5" DockPanel.Dock="Right"/>
             </DockPanel>
 
-
+            <WrapPanel Grid.Row="1" x:Name="Datos_operadora" Margin="0,19,-10,-10" >
+                <local:cardOperadora />
+            </WrapPanel >
             <!-- Tarjetas -->
             <WrapPanel Grid.Row="1" x:Name="datosWrappanel" Margin="0,19,-10,-10" >
                 <!-- Ejemplo de tarjeta -->

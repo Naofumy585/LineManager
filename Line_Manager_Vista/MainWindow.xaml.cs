@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Line_Manager_Logica;
 
 namespace Line_Manager_Vista
 {
@@ -23,12 +24,32 @@ namespace Line_Manager_Vista
         public MainWindow()
         {
             InitializeComponent();
-            for (int i = 0; i < 10; i++)
+
+            // Obtén los datos de la capa lógica
+            var metodosSitio = new Metodos_Sitio();
+            var listaSitios = metodosSitio.ObtenerSitios();
+            var listaOperadoras = metodosSitio.ObtenerOperadores();
+
+            foreach (var (usuario, tipo, sitio) in listaOperadoras)
             {
-                cardUC tarjeta = new cardUC();
-                datosWrappanel.Children.Add(tarjeta);
+                string status = "Activo"; // Cambia esto si tienes el status en la consulta
+
+                var card = new cardUC(); // Suponiendo que aquí es donde va el botón
+                card.txtNombreSitio.Text = sitio;
+                card.txtStatus.Text = status;
+                card.txtOperadora.Text = usuario;
+
+                // Suscribirse al evento del botón
+                card.AgregarLineaClick += (s, e) =>
+                {
+                    // Asegúrate de tener este contenedor en tu MainWindow.xaml
+                    ContenidoPrincipal.Children.Clear();
+                    ContenidoPrincipal.Children.Add(new Nueva_sitio());
+                };
+
+                datosWrappanel.Children.Add(card);
             }
         }
+
     }
-  
 }

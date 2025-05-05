@@ -24,5 +24,17 @@ namespace Line_Manager_Vista
         {
             InitializeComponent();
         }
+        public void SetDatos(string nombreSitio, string status, string operadora)
+        {
+            txtNombreSitio.Text = $"Sitio: {nombreSitio}";
+            txtStatus.Text = $"Estado: {status}";
+            txtOperadora.Text = $"Operadora: {operadora}";
+        }
+        public event EventHandler AgregarLineaClick;
+
+        private void BtnAgregarLinea_Click(object sender, RoutedEventArgs e)
+        {
+            AgregarLineaClick?.Invoke(this, EventArgs.Empty);
+        }
     }
 }
