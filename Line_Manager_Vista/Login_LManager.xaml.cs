@@ -12,13 +12,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Line_Manager_Logica;
-
 namespace Line_Manager_Vista
 {
     /// <summary>
     /// Lógica de interacción para Login_LManager.xaml
     /// </summary>
-    public partial class Login_LManager : Window
+    public partial class Login_LManager : Page
     {
         public Login_LManager()
         {
@@ -50,7 +49,6 @@ namespace Line_Manager_Vista
             // Aquí puedes abrir la ventana principal
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
-            this.Close();
         }
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -67,5 +65,6 @@ namespace Line_Manager_Vista
                 txtUsuario.Text = "Usuario";
             }
         }
+
     }
 }
